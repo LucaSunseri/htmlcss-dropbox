@@ -90,6 +90,16 @@ hr {
   filter: opacity(90%);
 }
 
+.euro, .euro::after {
+  content: " \20AC";
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.grey {
+  color: grey;
+}
+
 /********** HEADER **********/
 
 header {
@@ -191,7 +201,8 @@ main section {
 
  /* SECTION ONE */
 
- /*Header section one*/
+ /*HEADER section one*/
+
  section:nth-of-type(1) h2 {
    margin-bottom: 25px;
  }
@@ -205,24 +216,42 @@ section:nth-child(1) span:last-of-type i {
   color: grey;
 }
 
-/*main section one*/
+/*MAIN section one*/
+
 /*layout clearfix*/
 section:nth-of-type(1) .column {
   border: 2px solid #ebebec;
-  min-height: 600px;
+  min-height: 750px;
 }
 
 /*text*/
 section:nth-child(1) .column .container-column {
   border-top: 2px solid #ebebec;
-  padding: 25px 12px;
+  padding: 18px 12px;
+}
+
+section:nth-child(1) .column .container-column h3 {
+  margin-bottom: 10px;
 }
 
 section:nth-child(1) .column .container-column ul {
   list-style-type: none;
+  margin: 18px 0;
 }
 
-/*footer section one*/
+section:nth-child(1) .column .container-column ul li{
+  padding: 6px 0;
+}
+
+section:nth-child(1) .column .container-column a {
+  margin-bottom: 18px;
+}
+
+section:nth-child(1) .column .container-column a:last-child, .fa-check {
+  color: #0061ff;
+}
+
+/*FOOTER section one*/
 .sectionone-bottom {
   border: 2px solid #ebebec;
 }
