@@ -12,6 +12,18 @@ body {
   margin-bottom: 500px; /*DA TOGLIERE!!!!!!!*/
 }
 
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 14px;
+}
+
 .container-big {
   width: 80%;
   margin: 0 auto;
@@ -38,7 +50,7 @@ body {
 }
 
 .btn.big {
-  padding: 20px 20px;
+  padding: 16px 24px;
 }
 
 .btn.blue {
@@ -140,28 +152,33 @@ h1 {
 /********** MAIN **********/
 
 /* global main */
- main h2 {
-   font-size: 30px;
- }
+.icon-text-center {
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
 
- /* section one */
- .container-small h2 {
+ /* SECTION ONE */
+
+ /*Header section one*/
+ section:nth-of-type(1) h2 {
    margin-bottom: 25px;
  }
 
- .container-small span:first-of-type i {
+ section:nth-of-type(1) span:first-of-type i {
   color: #0061ff;
 }
 
-.container-small span:last-of-type i {
+section:nth-child(1) span:last-of-type i {
   margin-left: 15px;
   color: grey;
 }
 
-/* layout clearfix */
+/*main section one*/
+/*layout clearfix*/
 .column {
   float: left;
-  width: calc(100% - 650px);
+  width: calc((100% - 100px) / 3);
   margin: 25px auto;
   border: 2px solid #ebebec;
   min-height: 600px;
@@ -171,16 +188,29 @@ h1 {
   margin: 25px 50px;
 }
 
-/*section bottom*/
+/*text*/
+section:nth-child(1) .column .container-column {
+  border-top: 2px solid #ebebec;
+  padding: 25px 12px;
+}
+
+section:nth-child(1) .column .container-column ul {
+  list-style-type: none;
+}
+
+/*footer section one*/
 .sectionone-bottom {
   border: 2px solid #ebebec;
 }
 
 .sectionone-bottom .clearfix {
   border-top: 2px solid #ebebec;
+  padding: 15px;
 }
+
 .sectionone-bottom .clearfix div:first-of-type {
   float: left;
+  line-height: 40px;
 }
 
 .sectionone-bottom .clearfix div:last-of-type {
