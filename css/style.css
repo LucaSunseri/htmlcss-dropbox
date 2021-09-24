@@ -61,17 +61,16 @@ h4 {
   margin: 25px 50px;
 }
 
-/*class botton*/
+/*class button*/
 .btn {
   display: inline-block;
   text-decoration: none;
-  line-height: 0;
 	vertical-align: middle;
   padding: 14px 14px;
 }
 
 .btn.big {
-  padding: 16px 18px;
+  padding: 10px 30px;
 }
 
 .btn.blue {
@@ -190,6 +189,10 @@ header li a img {
 
 header li a:hover:not(#logo, .btn) {
   border-bottom: 2px solid black;
+}
+
+header .btn.blue {
+  line-height: 0;
 }
 
 /********** JUMBOTRON **********/
