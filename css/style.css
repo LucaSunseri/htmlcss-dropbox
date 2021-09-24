@@ -108,12 +108,8 @@ hr {
 }
 
 /*custom list*/
-.custom_list .check, .user, .folder, .pencil {
+.custom_list .check, .user, .folder, .pencil, .smile {
   line-height:2em;
-  padding-left:0px;
-  padding-top:5px;
-  padding-bottom:5px;
-  list-style-type:none;
   list-style:none;
   display: table-row;
  }
@@ -142,6 +138,13 @@ hr {
  .custom_list .pencil::before {
   font-family: "Font Awesome 6 Free";
   content: "\f044";
+  padding-right: 5px;
+  display: table-cell;
+ }
+
+ .custom_list .smile::before {
+  font-family: "Font Awesome 6 Free";
+  content: "\f4da";
   padding-right: 5px;
   display: table-cell;
  }
