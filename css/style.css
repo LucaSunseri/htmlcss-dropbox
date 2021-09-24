@@ -102,9 +102,49 @@ hr {
   color: grey;
 }
 
+/* layout active for section 4*/
 .active {
   border: 8px solid rgba(255,255,255, 0.8);
 }
+
+/*custom list*/
+.custom_list .check, .user, .folder, .pencil {
+  line-height:2em;
+  padding-left:0px;
+  padding-top:5px;
+  padding-bottom:5px;
+  list-style-type:none;
+  list-style:none;
+  display: table-row;
+ }
+
+ .custom_list .check::before {
+  content: "\2714";
+  color: #0061ff;
+  padding-right: 5px;
+  display: table-cell;
+ }
+
+ .custom_list .user::before {
+  font-family: "Font Awesome 6 Free";
+  content: "\f007";
+  padding-right: 5px;
+  display: table-cell;
+ }
+
+ .custom_list .folder::before {
+  font-family: "Font Awesome 6 Free";
+  content: "\f07b";
+  padding-right: 5px;
+  display: table-cell;
+ }
+
+ .custom_list .pencil::before {
+  font-family: "Font Awesome 6 Free";
+  content: "\f044";
+  padding-right: 5px;
+  display: table-cell;
+ }
 
 /********** HEADER **********/
 
@@ -234,7 +274,7 @@ section:nth-of-type(1) .column {
 /*text*/
 section:nth-child(1) .column .container-column {
   border-top: 2px solid #ebebec;
-  padding: 18px 12px;
+  padding: 18px 18px;
 }
 
 section:nth-child(1) .column .container-column h3 {
