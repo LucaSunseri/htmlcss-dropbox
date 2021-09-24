@@ -42,6 +42,7 @@ hr {
   border: 1px solid #ebebec;
 }
 
+/*CLEARFIX*/
 .clearfix:after {
   content: "";
   display: table;
@@ -59,6 +60,7 @@ hr {
   margin: 25px 50px;
 }
 
+/*class botton*/
 .btn {
   display: inline-block;
   text-decoration: none;
@@ -68,7 +70,7 @@ hr {
 }
 
 .btn.big {
-  padding: 16px 24px;
+  padding: 16px 18px;
 }
 
 .btn.blue {
@@ -100,6 +102,10 @@ hr {
   color: grey;
 }
 
+.active {
+  border: 8px solid rgba(255,255,255, 0.8);
+}
+
 /********** HEADER **********/
 
 header {
@@ -129,7 +135,7 @@ header li {
 
 header li a {
   display: inline-block;
-  line-height: 67px;
+  line-height: 70px;
   text-decoration: none;
   color: black;
 }
@@ -145,7 +151,7 @@ header li a:hover:not(#logo, .btn) {
 /********** JUMBOTRON **********/
 
 .jumbotron {
-  height: 550px;
+  height: 530px;
   margin-top: 70px;
   background-color: #b4d0e7;
 }
@@ -271,10 +277,15 @@ main hr {
 .sectionone-bottom .clearfix div:first-of-type {
   float: left;
   line-height: 40px;
+  width: 70%;
 }
 
 .sectionone-bottom .clearfix div:last-of-type {
   float: right;
+}
+
+.sectionone-bottom .clearfix p {
+  font-size: 10px;
 }
 
  /* SECTION TWO */
@@ -353,7 +364,7 @@ section:nth-of-type(4) a{
 }
 
 .father-container .big-son img {
-  width: 28%;
+  width: 30%;
 }
 
 .father-container .big-son hr {
@@ -446,18 +457,18 @@ section:nth-of-type(4) a{
 
 .bottom-section-four h3 {
  float: left;
- width: 35%;
+ width: 40%;
  font-size: 25px;
  color: #61082c;
- margin: 0 10%;
+ margin-left: 15%;
 }
 
 .bottom-section-four .btn.white.big {
-  float: left;
-  width: 25%;
-  margin: 0 10%;
+  float: right;
+  margin: 0 5;
   border: 2px solid #b4d0e7;
   text-align: center; 
+  margin-right: 15%;
 }
 
 /* SECTION FIVE */
