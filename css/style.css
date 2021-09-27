@@ -388,98 +388,79 @@ section:nth-of-type(4) a{
 }
 
 /*MAIN*/
-.father-container {
-  position: relative;
-  height: 300px;
+.main-section-four {
   margin-top: 25px;
-  background-color: #f5f5f5;
-  overflow: hidden;
 }
 
-.father-container .big-son {
-  width: calc(100% - 600px);
+.aside-left, .aside-right, .section-center {
+  float: left;
   height: 300px;
+}
+
+.aside-left, .aside-right {
+  width: 300px;
+}
+
+.section-center {
+  width: calc(100% - 600px);
+  background-color: #f5f5f5;
   margin: 0 auto;
-  padding: 20px 35px;
+  padding: 40px 50px;
   overflow: auto;
 }
 
-.father-container .big-son img {
+.section-center img {
   width: 30%;
 }
 
-.father-container .big-son p {
-  margin: 20px 0;
+.section-center p {
+  padding: 15px 0;
 }
 
-/*layout with position relative and absolute*/
-
-.father-container .small-son {
+.aside-left div, .aside-right div {
+  float: left;
+  width: 50%;
   height: 150px;
-  width: 150px;
   line-height: 150px;
   text-align: center;
 }
 
-.father-container .small-son img {
+.aside-left img, .aside-right img {
   width: 80%;
   vertical-align: middle;
   filter: invert(100);
 }
 
-.father-container .small-son:nth-of-type(1) {
-  position: absolute;
-  top: 0;
-  left: 0;
+/*background color box*/
+.aside-left div:nth-of-type(1) {
   background-color: #a2d39b;
 }
 
-.father-container .small-son:nth-of-type(2) {
-  position: absolute;
-  top: 0;
-  left: 150px;
+.aside-left div:nth-of-type(2) {
   background-color: #61082c;
 }
 
-.father-container .small-son:nth-of-type(3) {
-  position: absolute;
-  top: 0;
-  right: 150px;
-  background-color: #d5021f;
-}
-
-.father-container .small-son:nth-of-type(4) {
-  position: absolute;
-  top: 0;
-  right: 0px;
-  background-color: #b4d0e7;
-}
-
-.father-container .small-son:nth-of-type(5) {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+.aside-left div:nth-of-type(3) {
   background-color: #1d93ce;
 }
 
-.father-container .small-son:nth-of-type(6) {
-  position: absolute;
-  bottom: 0;
-  left: 150px;
+.aside-left div:nth-of-type(4) {
   background-color: #f91c1d;
 }
 
-.father-container .small-son:nth-of-type(7) {
-  position: absolute;
-  bottom: 0;
-  right: 150px;
+.aside-right div:nth-of-type(1) {
+  background-color: #d5021f;
+}
+
+.aside-right div:nth-of-type(2) {
+  background-color: #b4d0e7;
+}
+
+.aside-right div:nth-of-type(3) {
   background-color: #0d2481;
 }
 
-.father-container .small-son:nth-of-type(8) {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+.aside-right div:nth-of-type(4) {
   background-color: #fed830;
 }
 
