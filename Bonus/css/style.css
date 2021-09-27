@@ -178,7 +178,7 @@ header li {
 
 header li a {
   display: inline-block;
-  line-height: 70px;
+  line-height: 69px;
   text-decoration: none;
   color: black;
 }
@@ -193,6 +193,34 @@ header li a:hover:not(#logo, .btn) {
 
 header .btn.blue {
   line-height: 0;
+}
+
+/* BONUS 2 */
+.sub-menu {
+  display: none;
+  background-color: white;
+}
+
+#supporto:hover .sub-menu {
+  display: block;
+  position: absolute;
+  top: 70px;
+} 
+
+#supporto:hover .sub-menu li {
+  margin: 0;
+  display: block;
+  margin: 10px 0;
+}
+
+#supporto:hover .sub-menu li a {
+  border: none;
+  line-height: 3;
+  margin: 0 15px;
+}
+
+.sub-menu ul li:hover {
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 /********** JUMBOTRON **********/
@@ -378,7 +406,7 @@ section:nth-of-type(3) .column {
 
 /* SECTION FOUR */
 
-/*HEADER*/
+/*HEADER section four*/
 section:nth-of-type(4) h2 {
   margin-bottom: 25px;
 }
@@ -387,7 +415,7 @@ section:nth-of-type(4) a{
   color: #0061ff;
 }
 
-/*MAIN*/
+/*MAIN section four*/
 .main-section-four {
   margin-top: 25px;
 }
@@ -464,7 +492,7 @@ section:nth-of-type(4) a{
   background-color: #fed830;
 }
 
-/*FOOTER*/
+/*FOOTER section four*/
 .bottom-section-four {
   background-color: #b4d0e7;
   padding: 100px;
@@ -487,7 +515,7 @@ section:nth-of-type(4) a{
   margin-right: 15%;
 }
 
-/* SECTION FIVE */
+/* SECTION FIVE BONUS 1 */
 section:nth-of-type(5) h2{
   margin-bottom: 35px;
 }
